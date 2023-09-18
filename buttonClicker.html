@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Clicker</title>
+  <link rel="stylesheet" href="buttonClicker.css">
+</head>
+<body>
+  <div id="main-grid">
+    <div id="click-flexbox">
+      <div id="clicks-text">Clicks: 0</div>
+      <div id="clicks-per-sec-text">CPS: 0</div>
+      <button id="clicks-button">Get Clicks</button>
+    </div>
+    <div id="upgrades-flexbox">
+      <button class="passive-upgrade" id="caveman-button">
+        0 Caveman <br> Cost: 10 Clicks
+      </button>
+    </div>
+    <div id="settings-flexbox">
+      <button id="save-button">Save Progress</button>
+      <button id="reset-button">Reset Progress</button>
+    </div>
+  </div>
+  <script src="ButtonClicker.js"></script>
+  <script src="passiveUpgrades.js"></script>
+</body>
+</html>

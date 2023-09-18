@@ -1,0 +1,88 @@
+body {
+  background-color: aliceblue;
+  font-family: monospace;
+}
+
+button {
+  font-family: monospace;
+}
+
+#main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  align-items: space-between;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+#click-flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: space-between;
+}
+
+#upgrades-flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: space-between;
+}
+
+#settings-flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: space-between;
+}
+
+#clicks-text {
+  margin: 10px;
+  font-size: 30px;
+}
+
+#clicks-per-sec-text {
+  margin: 10px;
+  font-size: 30px;
+}
+
+#clicks-button {
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid, black;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#clicks-button:active {
+  width: 60px;
+}
+
+.passive-upgrade {
+  margin: 10px;
+  width: 150px;
+  height: 50px;
+  border: 2px solid, black;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#save-button {
+  margin: 10px;
+  width: 150px;
+  height: 50px;
+  border: 2px solid, black;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#reset-button {
+  margin: 10px;
+  width: 150px;
+  height: 50px;
+  border: 2px solid, black;
+  border-radius: 50px;
+  cursor: pointer;
+}
