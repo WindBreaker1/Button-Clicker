@@ -10,13 +10,13 @@ let resetButton = document.getElementById("reset-button");
 //common variables
 
 let clickPower = 1;
-let clicksAmount = JSON.parse(localStorage.getItem("clicksAmount"));
+let clicksAmount = Math.trunc(JSON.parse(localStorage.getItem("clicksAmount")));
 let clicksPerSec = JSON.parse(localStorage.getItem("clicksPerSec"));
 
 //update text functions
 
 function updateClicksAmount() {
-  clicksText.innerText = `Clicks: ${clicksAmount}`;
+  clicksText.innerText = `Clicks: ${Math.trunc(clicksAmount)}`;
 }
 
 function updateClickPerSecText() {
@@ -37,7 +37,7 @@ clicksButton.addEventListener("click", clickForClicks);
 function passiveClicks() {
 	if (clicksPerSec > 0) {
 		setInterval(function () {clicksAmount += clicksPerSec;}, 1000);
-    setInterval(function () {clicksText.innerText = `Clicks: ${clicksAmount}`}, 1000);
+    setInterval(function () {clicksText.innerText = `Clicks: ${Math.trunc(clicksAmount)}`}, 1000);
 	}	
 }
 
